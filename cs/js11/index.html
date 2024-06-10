@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Br" dir="ltr" style="font-family: Arial, Helvetica, sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js"></script>
+    <title>Js11- Calculando Valores</title>
+</head>
+<body>
+    <form>
+        <h1>Calculadora JS Versão 1.0</h1>
+        <div>
+            <p><label for="num1">Primeiro Número: </label></p>
+            <input type="text" placeholder="Digite um número" id="num1" size="40"/><br>
+            
+            <p><label for="num2">Segundo Número: </label></p>
+            <input type="text" placeholder="Digite um número" id="num2" size="40"/><br><br>
+            
+            <p id="selecao">Selecione a operação:</p>
+            <button type="button" id="btSomar" onclick="somar();">+</button>
+            <button type="button" id="btSubtrair" onclick="subtrair();">-</button>
+            <button type="button" id="btMultiplicar" onclick="multiplicar();">x</button>
+            <button type="button" id="btDividir" onclick="dividir();">&divide; </button> <br><br><br>
+            
+            <label>Resultado: </label>
+            <span id="resultado"></span>
+            <br><br>
+            
+            <button type="button" id="btLimpar" onclick="limpar();">Limpar</button>
+        
+        </div>
+    </form>
+</body>
+</html>

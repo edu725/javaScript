@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-Br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>js10-SVG</title>
+</head>
+<body>
+    <div id="container">
+        <div id="svg">
+            <h2>Imagem PNG (BITMAP)</h2>
+            <img src="./img/img2.png" alt="PNG">
+
+            <h2>Imagem SVG(IMAGEM VETORIAL)</h2>
+            <img src="./img/img2.svg" alt="SVG">
+
+            <h2>SVG embutido no html- &lt;svg&gt;</h2>
+            <svg class="svgcenter" width="205" height="105">
+                <rect width="200" height="100" style="fill:#009D68; stroke-width:3;stroke:#326A78;"/>
+                Infelizmente  seu Navegador não suporta SVG
+            </svg>
+
+            <svg class="svgcenter" height="100" width="900">
+                <ellipse cx="120" cy="40" rx="85" ry="25" style="fill:#009D68;"/>
+
+                <ellipse cx="120" cy="40" rx="65" ry="15" style="fill:#003f9d;"/>
+                Infelizmente  seu Navegador não suporta SVG
+            </svg>
+
+            <h2>Formas em SVG</h2>
+            <svg class="svgcenter" height="210" width="900">
+                <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:#009D68;stroke:#003f9d;stroke-width:5;fill-rule:nonzero;" />
+            </svg>
+
+            <h2>Eventos</h2>
+            <svg class="svgcenter"  height="120px" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <script type="text/javascript">
+                    <![CDATA[
+                        function acende(evt){
+                            evt.target.setAttribute("opacity","1.0")
+                        }
+
+                        function apaga(evt){
+                            evt.target.setAttribute("opacity","0.4")
+                        }
+                    ]]>
+                </script>
+                <g>
+                    <rect x="10" y="100" width="45" heigth="45" fill="#009D6B" opacity="0.4" />
+                </g>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-Br" dir="ltr" style="font-family:Arial, Helvetica, sans-serif ;">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js04 - Ações Assíncromas e Timers em JavaScript</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"></link>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"></script>
+</head>
+<body onload="cicloVermelho()">
+    <div id="container">
+        <!-- relógio -->
+        <div id="clock">
+            <h2>Hora do Sistema: <span id="hora"></span></h2>
+        </div>
+        <!-- cronometro -->
+        <div id="cronometro">
+            <h2>Contador: <span id="contador"></span></h2>
+            <button onclick="ligaTimer()" id="liga" name="liga">Liga Timer</button>
+            <button onclick="desligaTimer()" id="desliga" name="desliga">Desliga Timer</button>
+        </div>
+        <!-- semáforo -->
+        <div id="semaforo">
+            <h1>Semáforo utilizando JavaScript</h1>
+            <div id="vermelho"></div>
+            <div id="amarelo"></div>
+            <div id="verde"></div>
+        </div>
+    </div>
+    <script>
+        var hora = setInterval(myClock,1000)
+        function myClock(){
+            var d = new Date()
+            var t = d.toLocaleTimeString()
+            document.getElementById('hora').innerHTML = t
+        }
+    </script>
+</body>
+</html>

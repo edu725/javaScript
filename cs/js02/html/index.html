@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js02- Manipulando Elementos(DOM)</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/scripts.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Acesso e alterção de Propriedades usando JS</h1>
+    </div>
+    <div class="divAltera" >
+        <h2>document.getElementsById()</h2>
+        <p id="p1">
+            Paragrafo id = "p1" - padrão oculto -
+            Paragrafo numero 01 - texto original
+        </p>
+    </div>
+    <div class="divAltera">
+        <h2>document.getElementsByTagName()</h2>
+        <p>
+            Paragrafo numero 02- texto original
+        </p>
+        <p>
+            Paragrafo numero 03 - texto original
+        </p>
+    </div>
+    <div class="divAltera">
+        <h2>document.getElementsByName()</h2>
+        <input type="button" name="btRed" value="Vermelho">
+    </div>
+    <div class="divAltera">
+        <h2>document.getElementsByClassName()</h2>
+    </div>
+    <div class="cBotoes">
+        <input type="submit" onclick="mostrarParagrafo()" name="bId" value="ById">
+        <input type="submit" onclick="alteraConteudo()" name="bTagName" value="ByTagName">
+        <input type="submit" onclick="alteraBotao()" name="bName" value="ByName">
+        <input type="submit" onclick="alteraCor()" name="bClassName" value="ByClassName">
+    </div>
+</body>
+</html>

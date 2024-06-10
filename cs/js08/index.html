@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pr-Br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js08- Manip</title>
+</head>
+<body>
+    <script>
+        if(window.XMLHttpRequest){
+            xmlhttp = new XMLHttpRequest()
+        }else{
+            xmlhttp = new ActiveXObject('Microsoft.XMLHTTP')
+        }
+        xmlhttp.open('GET','./xml/catalogo.xml',false)
+        xmlhttp.send()
+        xmlDoc = xmlhttp.responseXML
+    </script>
+</body>
+</html>

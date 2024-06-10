@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr" style="font-family: Arial, Helvetica, sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js03 - Criando, alterando e removendo elemtos - DOM</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div id=" cabecalho">
+        <h1>Criando, alterando e removendo elemtos - DOM</h1>
+    </div>
+
+    <div id="lista">
+        <h2>Lista</h2>
+        <br>
+        <h3>Lista- Matemática</h3>
+        <ul id="mat">
+            <li>Produtos Notáveis</li>
+            <li>PA e PG</li>
+            <li>Matrizes</li>
+            <li>Probabilidade</li>
+        </ul>
+        <br>
+        <input type="button" onclick="inserirIntemFinal()" name="btItemF" id="btItemF" value="Inserir item no final">
+        
+        <input type="button" onclick="inserirIntemBefore()" name="btItemB" id="btItemB" value="Inserir item depois de...">
+        
+        <input type="button" onclick="substituiItem()" name="btItemS" id="btItemS" value="Substitui item">
+        
+        <input type="button" onclick="excluItem()" name="btExclui" id="btExclui" value="Exclui item">
+    </div>
+
+    <div id="listas" class="clearfix">
+        <div id="portugues">
+            <h3>Lista-Português</h3>
+            <ul id="port">
+                <li>Regência Verbal</li>
+                <li>Orações Subordinadas</li>
+                <li>Orações Coordenadas</li>
+                <li>Concordância Nominal</li>
+            </ul>
+            <input type="button" onclick="excluiPortugues()" name="btExcluirP" value="Exclui - Português">
+        </div>
+        <div id="geografia">
+            <h3>Lista-Geografia</h3>
+            <ul id="geo">
+                <li>Europa</li>
+                <li>Correntes Marítimas</li>
+                <li>Extração de Ouro</li>
+                <li>Tipos CLimáticos</li>
+            </ul>
+            <input type="button" onclick="excluiGeografia()" name="btExcluirG" value="Exclui - Geografia">
+        </div>
+    
+    </div>
+    
+    <div id="imagem" class="clearfix">
+        <h1>Imagens</h1>
+        <br>
+    </div>
+    
+    <div class="btImagem">
+        <input type="button" onclick="insereImagem()" name="btImg" id="btImg" value="Insere Imagem">
+    </div>
+
+    <div id="funcao">
+        <h2><span id="palavra">JavaScript</span> <span class="atencao">(Posicione o mouse sobre a palavra JavaScript)</span></h2>
+        <div id="conceito">
+            <p>
+                JavaScript é uma linguagem de programação que permite implementar funcionalidades mais 
+                complexas em páginas web. Sempre que uma página web faz mais do que apenas mostrar 
+                informações estáticas para você - ela mostra em tempo real conteúdos atualizados, 
+                mapas interativos, animações gráficas em 2D/3D, vídeos, etc. - você pode apostar 
+                que o Javascript provavelmente está envolvido.
+            </p>
+            <br>
+            <em>Mozilla - Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript" target="_blank">MDN Web Docs</a>, 26/06/2021</em>
+        </div>
+    </div>
+
+    <div id="contador">
+        <h2>Contador de Cliques: <span id="cont">0</span> </h2>
+        <br>
+        <input type="button" name="btCont" id="btCont" value="Incremneta o Contador">
+        <input type="button" name="btLimpa" id="btLimpa" value="Limpa o Contador">
+    </div>
+    <script type="text/Javascript">
+        document.getElementById('palavra').onmouseover = function(){mouseOver()};
+        document.getElementById('palavra').onmouseout = function(){mouseOut()};
+        function mouseOver() {
+            document.getElementById('conceito').style.visibility = 'visible';
+        }
+        function mouseOut() {
+            document.getElementById('conceito').style.visibility = 'hidden';
+        }
+    </script>
+    <script src="./js/click.js"></script>
+</body>
+</html>

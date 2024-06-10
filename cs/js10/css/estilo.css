@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: "Lucida Console", Verdana;
+  background-color: #EBE784;
+  color: #009D6B;
+}
+h2{
+  text-align: center;
+}
+#container{
+  background-color: white;
+  width: 80%;
+  min-height: auto;
+  padding: 20px;
+  margin: 10px auto 10px auto;
+  border-radius: 10px;
+}
+.imgcenter{
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+}
+.svgcenter{
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 205px;
+}

@@ -1,0 +1,16 @@
+#mesa{
+  background-color: green;
+  left: 0px;
+  top: 0px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+
+#bola{
+  background-color: rgb(2, 0, 112);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+}
